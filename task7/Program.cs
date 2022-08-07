@@ -8,12 +8,12 @@
 System.Console.Clear();
 
 System.Console.WriteLine("Введите первое число");
-double firstNumber = double.Parse(System.Console.ReadLine()!);
+int firstNumber = int.Parse(System.Console.ReadLine()!);
 
 System.Console.WriteLine("Введите второе число");
-double secondNumber = double.Parse(System.Console.ReadLine()!);
+int secondNumber = int.Parse(System.Console.ReadLine()!);
 
 if (firstNumber % secondNumber == 0) 
     System.Console.WriteLine("Первое число кратно второму");
 else 
-    System.Console.WriteLine($"Остаток от деления {firstNumber % secondNumber:f3}");
+    System.Console.Write($"Остаток от деления {firstNumber % secondNumber}");
