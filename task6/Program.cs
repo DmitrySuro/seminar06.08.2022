@@ -8,12 +8,13 @@
 System.Console.Clear();
 
 Random rnd = new Random();
-int number = rnd.Next(10,99);
+int number = rnd.Next(10,100);
 
 int firstNumber = number / 10;
-int twoNumber = number % 10;
+int secondNumber = number % 10;
 
-if (firstNumber > twoNumber) System.Console.WriteLine($"Наибольшая цифра этого числа: {firstNumber}");
-if (firstNumber < twoNumber) System.Console.WriteLine($"Наибольшая цифра этого числа: {twoNumber}");
-
-System.Console.WriteLine(number);
+System.Console.Write($"Наибольшая цифра числа {number} : ");
+if (firstNumber > secondNumber) 
+    System.Console.WriteLine(firstNumber);
+else 
+    System.Console.WriteLine(secondNumber);
